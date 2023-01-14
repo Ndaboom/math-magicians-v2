@@ -16,29 +16,30 @@ class Calculator extends React.Component {
         <h1>{ this.props.name }</h1>
         <div className="screen-container">0</div>
         <div className="touch-pad">
-          <button type="button">AC</button>
-          <button type="button">+/-</button>
-          <button type="button">%</button>
+          <button className="gray-color" type="button">AC</button>
+          <button className="gray-color" type="button">+/-</button>
+          <button className="gray-color" type="button">%</button>
           <button className="orange" type="button">÷</button>
 
-          <button type="button">7</button>
-          <button type="button">8</button>
-          <button type="button">9</button>
+          <button className="gray-color" type="button">7</button>
+          <button className="gray-color" type="button">8</button>
+          <button className="gray-color" type="button">9</button>
           <button className="orange" type="button">x</button>
 
-          <button type="button">4</button>
-          <button type="button">5</button>
-          <button type="button">6</button>
+          <button className="gray-color" type="button">4</button>
+          <button className="gray-color" type="button">5</button>
+          <button className="gray-color" type="button">6</button>
           <button className="orange" type="button">-</button>
 
-          <button type="button">1</button>
-          <button type="button">2</button>
-          <button type="button">3</button>
+          <button className="gray-color" type="button">1</button>
+          <button className="gray-color" type="button">2</button>
+          <button className="gray-color" type="button">3</button>
           <button className="orange" type="button">+</button>
-
-          <button type="button">0</button>
-          <button type="button">.</button>
-          <button className="orange" type="button">=</button>
+        </div>
+        <div className="sub-touch-pad">
+          <button className="gray-color zero-btn" type="button">0</button>
+          <button className="gray-color dot-btn" type="button">.</button>
+          <button className="orange equal-btn" type="button">=</button>
         </div>
       </div>
     );
