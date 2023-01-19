@@ -1,21 +1,22 @@
-/* eslint-disable no-useless-constructor */
-/* eslint-disable react/prefer-stateless-function */
+import React, { memo } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import React from 'react';
-import Calculator from './components/Calculator';
+import Navbar from './components/navbar';
+import Home from './components/home';
+import CalculatorPage from './components/calculatorPage';
+import QuotesPage from './components/QuotesPage';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-      <div className="main-container">
-        <Calculator name="Calculator 1.0" />
-      </div>
-    );
-  }
-}
-
+const App = memo(() => (
+  <React.StrictMode>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/calculator" element={<CalculatorPage />} />
+        <Route path="/quote" element={<QuotesPage />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
+));
+App.displayName = 'My Calculator';
 export default App;
