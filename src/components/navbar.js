@@ -23,7 +23,7 @@ function Navbar() {
 
   return (
     <nav className={styles.navigation}>
-      <h2 className={styles.navBarTitle}>Math-Magician</h2>
+      <h2 className={styles.navBarTitle}>Math-Magicians</h2>
       <ul className={styles.navigationMenu}>
         {links.map((link) => (
           <li
