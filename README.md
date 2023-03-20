@@ -89,7 +89,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [No live demo yet]()
+- [Click here to check out the live demo](https://math-magicians-v2.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
